@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+
+int main() {
+    
+  int a[7];
+  int k;
+  printf("enterthe value of k: ");
+  scanf("%d", &k);
+ 
+  printf("enter the elements in the array");
+  for(int i = 0; i < 7; i++){
+    scanf("%d", &a[i]);
+}
+  
+  
+
+  for(int i = 0; i < 7; i++){
+    for(int j = i+1; j< 7; j++){
+      int b = a[i] + a[j];
+      if(b == k){
+        printf("the element whose sum is equal to the given sum is %d and %d \n", a[i], a[j]);
+        
+      }
+      
+    }
+   
+    
+  }
+
+
+
+    return 0;
+}
