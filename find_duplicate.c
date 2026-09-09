@@ -7,6 +7,7 @@ int main(){
     int b = 0;
 
     int a[n];
+    
     printf("enter the elements:");
 //[1,2,3,4,5] s = 7 by index = 0
     for(int i = 0; i< n; i++){
@@ -14,14 +15,16 @@ int main(){
 
 
     }
-    int i = 0;
-    for(i = 0; i < n; i++){
+    
+    for(int i = 0; i < n; i++){
         b = b ^ a[i];
     }
-    for(int j = i+1; j< n; j++){
-        b = b^i;
+    
+    for(int j = 1; j< n; j++){
+        b = b^j;
         }
         printf("%d", b);
         
        return 0;
 }
+
